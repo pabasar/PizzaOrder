@@ -122,7 +122,7 @@ namespace PizzaHut
                 service = 50;
             }
 
-            totalcost = (catcost * sizeT) + service;
+            totalcost = (catcost * sizeT) + service + topcost;
 
             msg += "\nPrice: Rs." + totalcost.ToString();
 
