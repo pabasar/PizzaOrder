@@ -44,9 +44,7 @@ namespace PizzaHut
 
             rdoSmall.Checked = true;
             rdoThin.Checked = true;
-            rdoEatIn.Checked = true;
-
-            
+            rdoEatIn.Checked = true;            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -78,23 +76,23 @@ namespace PizzaHut
             msg += "\nToppings: " + toppingList;
             msg += "\nWhere to Eat: " + eat;
 
-            int catcost = 0;
-            int service = 0;
-            int topcost = topcount * 20; ;
-            int totalcost = 0;
+            double catcost = 0;
+            double service = 0;
+            double topcost = topcount * 20; ;
+            double totalcost = 0;
 
-            int sizeT = 0;
+            double sizeT = 0;
             if(size=="Small")
             {
                 sizeT = 1;
             }
             else if(size == "Medium")
             {
-                sizeT = 2;
+                sizeT = 1.2;
             }
             else if(size == "Large")
             {
-                sizeT = 3;
+                sizeT = 1.4;
             }
 
 
